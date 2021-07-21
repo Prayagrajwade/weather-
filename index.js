@@ -23,12 +23,14 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity:" + humidity + "%";
 
         document.querySelector(".wind").innerText = "wind speed:" + speed + "km/h";
+
+        document.querySelector(".weather").classlist.remove("loading");
     },
 
     search:function()
     {
            this.fetchWeather( document.querySelector(".search-bar").value);
-    }
+    },
 };
 
 
@@ -45,3 +47,6 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
        weather.search();
    }
 });
+
+
+weather.fetchWeather("Shahdol");
