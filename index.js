@@ -7,6 +7,6 @@ let weather = {
 
 
     displayWeather: function(data){
-
+        const{name} = data;
     }
 };
