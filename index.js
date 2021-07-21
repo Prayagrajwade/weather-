@@ -8,9 +8,21 @@ let weather = {
 
     displayWeather: function(data){
         const{name} = data;
-        const {icon,discription} = data.weather;
+        const {icon,discription} = data.weather[0];
         const{temp,humidity} = data.main;
         const{speed} = data.wind;
-        console.log(name,icon,discription,temp,humidity,speed)
+        console.log(name,icon,discription,temp,humidity,speed);
+        document.querySelector(".city").innerText = "Weather in " + name;
+        // document.querySelector(".icon").src= "https://openweathermap.org/img/wn/"+ icon +"@x.png";
+
+        document.querySelector(".discription").innerText = discription;
+
+
+        document.querySelector(".temp").innerText = temp+ " C";
+
+        document.querySelector(".humidity").innerText = "Humidity:" + humidity + "%";
+
+        document.querySelector(".wind").innerText = "wind speed:" + speed + "km/h";
     }
 };
+
