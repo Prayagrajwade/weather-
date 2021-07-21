@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image: url('https://source.unsplash.com/WLUHO9A_xik/1240x900/?landscape');
+}
+
+.card{
+    background-color: rgba(0, 0, 0,.5);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+}
+button{
+    cursor: pointer;
+    margin: 0.5em;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    height: 30px;
+    width: 150px;
+}
+
+button:hover{
+    background-color: rgb(206, 143, 143);
+    color: white;
+}
+
+input.search-bar{
+    
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    width: 300px;
+
+
+}
+
+
+h1.temp{
+    margin: 0;
+}
